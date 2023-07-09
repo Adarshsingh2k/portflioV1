@@ -1,0 +1,95 @@
+<!-- <img src="" alt="" srcset="" width="500px"> -->
+
+
+
+<div class="container  ">
+
+    <div class="  text-white box1"  >
+        <!-- <img src="{{imgUrl}}" class="card-img" alt="..."> -->
+        <div class="" style="background-color: transparent; color: white;">
+          <h2 class="card-title cont" style="text-transform: capitalize;" >👋 Hey There my name is {{fullName}}, <br> Building Innovative Solutions Through Code and Creativity</h2>
+          <br>
+          <i class="card-text " style="font-size: 21px;">{{summary}}</i>
+          <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+        </div>
+      </div>
+
+    <!-- <h1>{{fullName}}</h1> -->
+    <!-- <h2>{{summary}}</h2> -->
+</div>
+
+<!-- <app-skills></app-skills> -->
+
+<div class="container mt-5 ">
+
+  <div class="">
+    <h1 class="text-sm-end box33">Masterfully combining expertise, creativity, and determination to achieve remarkable results in 🤹🏽</h1>
+   <div class="flowCheck"> <h1 class="btn btn-outline-danger btn-lg mt-3 me-3 p-2"  *ngFor="let i of skills">
+      {{i}}</h1>
+    </div>
+  </div>
+</div>
+
+
+<!-- education and experience -->
+<div class="container mt-5">
+<div class=" row">
+
+   
+    <div class="timeline " style="background-color: black;" > 
+        <h1 class=" mb-3 text-center">Experience</h1> 
+        <div class="tl-content" [class.tl-content-active]="item.is_current" *ngFor="let item of finalExperience">
+          <div class="tl-header">
+            <span class="tl-marker"></span>
+            <p class="tl-title">
+              {{item.title}} 
+              <h2>{{item.company}}</h2>
+            <p>
+            <time class="tl-time" datetime="">
+              {{item.date_range}}
+            </time>
+          </div>
+          <div class="tl-body">
+            <!-- <p> -->
+              <!-- {{item.description}} -->
+              <p *ngIf="!item.showFullContent">{{ item.description | slice:0:200 }}</p>
+              <p *ngIf="item.showFullContent">{{ item.description }}</p>
+              <button class="badge bg-primary p-2" (click)="toggleReadMore(item)">{{ item.showFullContent ? 'Read Less' : 'Read More' }}</button>
+            <!-- </p> -->
+          </div>
+        </div>
+        
+        
+          
+      </div>
+
+      <!-- <div class="education col-sm"> -->
+
+        <!-- <div class="tl-content tl-content-active" >
+            <div class="tl-header">
+              <span class="tl-marker"></span>
+              <p class="tl-title">
+                {{ item[1].degree }} {{ item[1].field_of_study }} -->
+                <!-- <h2>{{ item[1].school }}</h2> -->
+                <!-- {{eduTitle}} -->
+                <!-- <h2>{{ eduSchool }}</h2> -->
+
+              <!-- <p> -->
+              <!-- <time class="tl-time" datetime=""> -->
+                <!-- {{item.date_range}} -->
+              <!-- </time> -->
+            <!-- </div> -->
+            <!-- <div class="tl-body"> -->
+              <!-- <p> -->
+                <!-- {{item.description}} -->
+                <!-- <p *ngIf="!item.showFullContent">{{ item.description | slice:0:200 }}</p>
+                <p *ngIf="item.showFullContent">{{ item.description }}</p>
+                <button class="badge bg-primary p-2" (click)="toggleReadMore(item)">{{ item.showFullContent ? 'Read Less' : 'Read More' }}</button>
+              </p> -->
+            <!-- </div> -->
+          <!-- </div> --> 
+
+      <!-- </div> -->
+</div>
+
+</div>
