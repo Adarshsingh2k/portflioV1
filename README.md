@@ -1,4 +1,11 @@
-# PortV1
+# PortV
+
+In this project i have used Linkedin API, GFG API and Leetcode API.
+
+## Things left to do
+  - [ ] integrate github API
+  - [ ] make skills dynamic
+  - [ ] contact me
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
