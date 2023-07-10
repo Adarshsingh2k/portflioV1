@@ -1,62 +1,77 @@
 <div class="container mt-5 mb-5">
 
 
-<div class="row">
-        <div class="col-sm-6">
-          <div class="card bg-dark">
-            <div class="card-body row">
-                <div class="col-sm">
-                        <canvas id="gfgCodeStatusChart"  width="200" height="200"></canvas>
+        <div class="row ">
+                <div class="col-sm-6">
+                        <div class="card bg-dark">
+                                <div class="row g-0">
+                                        <div class="col-sm-5">
+                                                <canvas class="card-img" id="gfgCodeStatusChart" width="300"
+                                                        height="300"></canvas>
 
-                </div>
-                <div class="col-sm" style="color: white;">
-                        <h3 class="card-title" style="color: white;">
-                        <img src="../../../assets/gfg-gg-logo.svg" alt="" srcset="">
-                        <span class="ps-3"> {{username}} </span> 
-                        </h3> 
-                        <br>
-                        <h5>Total Problems Solved: {{total_problem_solved}}</h5>
-                        <br>
-                        <h5>Overall Coding Score: {{overall_coding_score}}</h5>
-                        <br>
-                        <h5>Monthly Coding Score: {{monthly_coding_score}}</h5>
-                        <br>
-                        <a href="{{gfgLink}}" target="_blank" class="btn btn-primary">Check My Profile</a>
+                                        </div>
 
-                </div>
+                                        <div class="col-sm-7" style="color: white;">
+                                                <div class="card-body ">
 
-              <!-- <h5 class="card-title">Special title treatment</h5>
+                                                        <h5 class="card-title" style="color: white;">
+                                                                <img src="../../../assets/gfg-gg-logo.svg" alt=""
+                                                                        srcset="">
+                                                                <span class="ps-2"> {{username}} </span>
+                                                        </h5>
+                                                        <br>
+                                                        <h6>Total Problems Solved: {{total_problem_solved}}</h6>
+                                                        
+                                                        <h6>Overall Coding Score: {{overall_coding_score}}</h6>
+                                                        
+                                                        <h6>Monthly Coding Score: {{monthly_coding_score}}</h6>
+                                                        
+                                                        <a href="{{gfgLink}}" target="_blank"
+                                                                class="btn btn-primary">Check My Profile</a>
+
+                                                </div>
+                                        </div>
+
+                                                <!-- <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card bg-dark">
-            <div class="card-body row">
-                <div class="col-sm">
-                        <canvas id="leetCodeStatusChart"  width="200" height="200"></canvas>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-sm-6">
+                                <div class="card bg-dark">
+                                <div class="row g-0">
 
+                                        
+                                                <div class="col-sm-5">
+
+                                                        <canvas class="card-img" id="leetCodeStatusChart" width="200"
+                                                                height="200"></canvas>
+
+                                                </div>
+                                                <div class="col-sm-7" style="color: white;">
+                                                <div class="card-body ">
+
+                                                        <h5 class="card-title" style="color: white;">
+                                                                <img src="../../../assets/leetcode.png" alt="" srcset=""
+                                                                        style="height: 43px">
+                                                                <span class="ps-2"> {{profileName}} </span>
+                                                        </h5>
+                                                        <br>
+                                                        <h6>Total Problems Solved: {{totalSolved}}</h6>
+                                                        
+                                                        <h6>Ranking: #{{ranking}}</h6>
+                                                        
+                                                        <!-- <h6>Monthly Coding Score: {{monthly_coding_score}}</h6> -->
+                                                        
+                                                        <a href="{{leetUrl}}" target="_blank"
+                                                                class="btn btn-primary">Check My Profile</a>
+                                                </div>
+
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
                 </div>
-                <div class="col-sm" style="color: white;">
-                        <h3 class="card-title" style="color: white;">
-                        <img src="../../../assets/leetcode.png" alt="" srcset="" style="height: 43px">
-                        <span class="ps-3"> {{profileName}} </span> 
-                        </h3> 
-                        <br>
-                        <h5>Total Problems Solved: {{totalSolved}}</h5>
-                        <br>
-                        <h5>Ranking: #{{ranking}}</h5>
-                        <br>
-                        <!-- <h5>Monthly Coding Score: {{monthly_coding_score}}</h5> -->
-                        <br>
-                        <a href="{{leetUrl}}" target="_blank" class="btn btn-primary">Check My Profile</a>
 
-                </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-</div>
-
