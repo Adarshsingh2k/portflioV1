@@ -6,6 +6,8 @@ In this project i have used Linkedin API, GFG API and Leetcode API.
   - [ ] integrate github API
   - [ ] make skills dynamic
   - [ ] contact me
+  - [ ] remove statements from console
+  - [ ] add pre loader with info of technology used
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
