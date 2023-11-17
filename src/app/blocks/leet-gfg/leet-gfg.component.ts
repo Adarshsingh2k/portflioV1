@@ -32,7 +32,7 @@ export class LeetGFGComponent {
 
   ngOnInit(){
     this.gfgData.getGfgData().subscribe(response=>{
-      console.log(response)
+      // console.log(response)
       this.gfgDataIn=response
       this.username=this.gfgDataIn.username
       this.extractGfgData(this.gfgDataIn)
@@ -40,7 +40,7 @@ export class LeetGFGComponent {
     })
 
     this.leetData.getLeetcodeData().subscribe(response=>{
-      console.log(response)
+      // console.log(response)
       this.leetDataIn=response
       this.extractLeetData(this.leetDataIn)
       this.renderPieChartLeet(this.leetDataIn)
@@ -178,7 +178,7 @@ export class LeetGFGComponent {
   }
 
   extractLeetData(input:any){
-    console.log(input)
+    // console.log(input)
     this.profileName=input.profileName
     this.totalSolved=input.totalSolved
     this.ranking=input.ranking
